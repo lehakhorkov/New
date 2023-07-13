@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+nav{
+    background-color: rgb(208, 212, 212);
+    height: 100%;
+    width: max-content;
+
+    box-shadow: 5px 0px 10px rgb(85, 81, 81);
+    z-index: 1;
+}
+
+nav h3{
+    padding: 20px;
+}
+
+.navNew{
+   padding: 15px;
+}
+
+
+
+.navDash{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    padding: 20px;
+}
+
+.navDash img{
+    width: 25px;
+    height: 25px;
+}
+
+.white{
+    display: none;
+}
+
+.navDash:hover{
+    color: white;
+    background-color: rgb(228, 20, 211);
+}
+
+.navDash:hover .white{
+    display: block;
+    
+}
+
+.navDash:hover .gray{
+    display: none;
+}
+
+
+main{
+    background-color: rgb(171, 176, 176);
+    padding: 0px 40px;
+}
+
+main h3{
+    margin-bottom: 50px;
+    padding: 20px 0px;
+}
+
+.se1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* первая секция на 4 обьекта */
+
+.se1>div{
+    background-color: white;
+    padding: 2% 6%;
+    /* margin-top: 50px; */
+
+    box-shadow: 2px 2px 5px rgb(85, 81, 81);
+}
+
+.se1 div .se1OneNew{
+    /* display: flex;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px;
+    padding: 20px 0px;
+}
+
+.se1OneNew img{
+    background-color: rgb(16, 181, 71);
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(85, 81, 81);
+}
+
+.se1OneNew div:nth-child(2){
+    text-align: right;
+    width: 100%;
+}
+
+.se1OneNew .se1Onep1{
+    font-size: 10pt;
+    color: rgb(105, 101, 101);
+}
+
+.se1OneNew .se1Onep2{
+    font-size: 24pt;
+    
+}
+
+
+/* ---------------------------------------------------- */
+.se1TwoNew{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.se1TwoNew img{
+    width: 10px;
+    height: 10px;
+}
+
+.se1TwoNew p{
+    font-size: 9pt;
+    color: rgb(109, 103, 103);
+}
+
+
+
+/* позиционирование первого блока */
+
+
+.se1OneNew img{
+    position: relative;
+    top: -50px;
+    left: 0px;
+    z-index: 1;
+
+}
+
+/* второй блок */
+
+.se1OneNew .imgTwo{
+    background-color: rgb(192, 192, 20);
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(85, 81, 81);
+}
+
+/* третий блок */
+
+.se1OneNew .imgThree{
+    background-color: rgb(85, 75, 174);
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(85, 81, 81);
+}
+
+
+/* четвертый блок */
+
+.se1OneNew .imgFour{
+    background-color: rgb(163, 21, 33);
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(85, 81, 81);
+}
+
+
+/* третья секция */
+
+.se3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin: 50px 0px;
+}
+
+.se3>div{
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(85, 81, 81);
+}
+
+.tasks{
+    display: flex;
+    gap: 5%;
+    background-color: rgb(192, 192, 20);
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding: 10px 15px;
+
+    position: relative;
+    top: -20px;
+}
+
+
+
+.tasks span, .tasks div{
+    padding: 10px 15px;
+}
+
+.tasks a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.tasks>div:hover{
+    background-color: rgb(226, 226, 124);
+}
+
+
+/* -------------------------------------------- */
+
+.list{
+    padding: 10px 40px;
+}
+
+.list>div{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr; 
+    border-bottom: 1px solid rgb(130, 125, 125); 
+    padding: 10px 0px;
+}
+
+.list>div:nth-child(4){
+    border-bottom: none;
+}
+
+
+.list img{
+    width: 20px;
+    height: 20px;
+}
+
+input{
+    width: 45%;
+    justify-self: end;
+}
+
+/* второй блок */
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    background-color: blue;
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding: 10px 15px;
+
+    position: relative;
+    top: -20px;
+}
+
+.stats p:nth-child(1){
+    font-size: 16pt;
+}
+
+.tab{
+    padding: 10px 40px;
+}
+
+.tab>div{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    gap: 3%;
+    border-bottom: 1px solid rgb(140, 136, 136);
+    padding: 10px 0px;
+}
+
+.tab>div:nth-child(1){
+    color: green;
+}
+
+.tab>div:nth-child(5){
+    border-bottom: none;
+}
+
+
+/* подвал */
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 0px;
+}
+
+footer>div:nth-child(1){
+    justify-self: start;
+
+    display: flex;
+    gap: 20%;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}  
+
+footer>div:nth-child(2){
+    justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+

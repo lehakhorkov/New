@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+}
+
+nav{
+    background-color: rgb(230, 230, 230);
+    height: 100%;
+    width: max-content;
+}
+
+.navDash{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    padding: 20px;
+}
+
+.navDash img{
+    width: 25px;
+    height: 25px;
+}
+
+.white{
+    display: none;
+}
+
+.navDash:hover{
+    background-color: rgb(228, 3, 138);
+    color: white;
+}
+
+.navDash:hover .white{
+    display: block;
+}
+
+.navDash:hover .gray{
+    display: none;
+}
+nav h3{
+    padding: 20px;
+}
